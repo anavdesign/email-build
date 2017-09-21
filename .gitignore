@@ -1,0 +1,3 @@
+# Gitignore
+/campaigns/*
+!/campaigns/_template

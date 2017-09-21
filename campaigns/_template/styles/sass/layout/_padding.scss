@@ -1,0 +1,59 @@
+// ===========================================
+// $ PADDING
+// ===========================================
+
+$padding      : 15px;
+$paddingSmall : 10px;
+$paddingLarge : 25px;
+
+.layout-padding {
+  padding: $padding;
+}
+.layout-padding--y {
+  padding-top: $padding;
+  padding-bottom: $padding;
+}
+.layout-padding--x {
+  padding-right: $padding;
+  padding-left: $padding;
+}
+
+// $ SMALL
+// -------------------------------------------
+.layout-padding-small {
+  padding: $paddingSmall;
+}
+.layout-padding-small--y {
+  padding-top: $paddingSmall;
+  padding-bottom: $paddingSmall;
+}
+.layout-padding-small--x {
+  padding-right: $paddingSmall;
+  padding-left: $paddingSmall;
+}
+
+// $ LARGE
+// -------------------------------------------
+.layout-padding-large {
+  padding: $paddingLarge;
+}
+.layout-padding-large--y {
+  padding-top: $paddingLarge;
+  padding-bottom: $paddingLarge;
+}
+.layout-padding-large--x {
+  padding-right: $paddingLarge;
+  padding-left: $paddingLarge;
+}
+
+// $ NO PADDING
+// -------------------------------------------
+.layout-no-padding {
+  padding: 0!important;
+}
+.layout-no-padding-top {
+  padding-top: 0!important;
+}
+.layout-no-padding-bottom {
+  padding-bottom: 0!important;
+}

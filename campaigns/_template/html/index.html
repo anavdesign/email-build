@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="x-apple-disable-message-reformatting">
+    <title></title>
+    <link href="./styles.css" rel="stylesheet">
+    <link href="../styles/css/email-client.css" rel="stylesheet" type="text/css" data-embed>
+    <link href="../styles/css/layout.css" rel="stylesheet" type="text/css" data-embed>
+    <link href="../styles/css/typography.css" rel="stylesheet" type="text/css" data-embed>
+    <link href="../styles/css/buttons.css" rel="stylesheet" type="text/css" data-embed>
+    @@include('./inc/outlook.html')
+  </head>
+  <body class="email-body">
+    <center class="email-wrapper background-wrapper">
+      <div class="layout-container">
+        @@include('./inc/header.html')
+
+        <!-- EMAIL HERO : BEGIN -->
+        <table class="layout-hero layout-container" role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+          <tbody>
+            <tr>
+              <td class="align-center">
+                <img class="image-block" src="http://placehold.it/1200x600" width="600" height="" alt="" align="center" border="0">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- EMAIL HERO : END -->
+
+        <h1 class="header layout-padding layout-no-padding-bottom">Header</h1>
+
+        <!-- EMAIL ARTICLE : BEGIN -->
+        <table class="layout-article layout-container" role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+          <tbody>
+            <tr>
+              <td class="layout-padding align-left background-white">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo delectus nostrum quam, modi asperiores nam minima dicta eius cum sit.
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet, <a href="#">consectetur adipisicing elit</a>. Numquam molestiae rerum omnis voluptatum, cumque facilis, nulla vitae! Dolorem molestiae unde consequuntur autem, non nihil natus, cumque officia quas dolorum eligendi saepe mollitia vitae ratione dolor atque cum ut quam amet. Minima doloribus, numquam eos qui hic impedit dolorem sequi praesentium!
+                <br>
+                <br>
+
+                <!-- BUTTON : BEGIN -->
+                <table class="button button--red" role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
+                  <tbody>
+                    <tr>
+                      <td class="button__td">
+                        <a href="#">
+                          <span class="button__text">Red</span>
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- BUTTON : END -->
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- EMAIL ARTICLE : END -->
+
+        <h2 class="header layout-padding">2 Columns</h2>
+
+        <!-- EMAIL ARTICLE : BEGIN -->
+        <table class="layout-article layout-container layout-responsive layout-responsive--2" role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+          <tbody>
+            <tr>
+              <td class="layout-responsive__td layout-padding">Col 1</td>
+              <td class="layout-responsive__td layout-padding">Col 2</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- EMAIL ARTICLE : END -->
+
+        <br>
+
+        <h2 class="subtitle layout-padding">3 Columns</h2>
+
+        <!-- EMAIL ARTICLE : BEGIN -->
+        <table class="layout-article layout-container layout-responsive layout-responsive--3" role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+          <tbody>
+            <tr>
+              <td class="layout-responsive__td layout-padding">Col 1</td>
+              <td class="layout-responsive__td layout-padding">Col 2</td>
+              <td class="layout-responsive__td layout-padding">Col 3</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- EMAIL ARTICLE : END -->
+
+        <br>
+        @@include('./inc/footer.html')
+        <br>
+        <br>
+      </div>
+    </center>
+  </body>
+
+</html>

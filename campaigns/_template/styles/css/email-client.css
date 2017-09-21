@@ -1,0 +1,84 @@
+/* What it does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+  margin:0 !important;
+}
+
+/* What it does: A work-around for email clients meddling in triggered links. */
+*[x-apple-data-detectors],  /* iOS */
+.x-gmail-data-detectors,  /* Gmail */
+.x-gmail-data-detectors *,
+.aBn {
+  border-bottom: 0 !important;
+  cursor: default !important;
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
+/* What it does: Prevents Gmail from displaying an download button on large, non-linked images. */
+.a6S {
+  display: none !important;
+  opacity: 0.01 !important;
+}
+
+/* If the above doesn't work, add a .g-img class to any image in question. */
+img.g-img + div {
+  display:none !important;
+}
+
+/* What it does: Prevents underlining the button text in Windows 10 */
+.button-link {
+  text-decoration: none !important;
+}
+
+/* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+/* Create one of these media queries for each additional viewport size you'd like to fix */
+/* Thanks to Eric Lepetit (@ericlepetitsf) for help troubleshooting */
+@media only screen and (min-device-width: 375px) and (max-device-width: 413px) { /* iPhone 6 and 6+ */
+  .email-container {
+      min-width: 375px !important;
+  }
+}
+
+/* Yahoo! Mail Override */
+a:link,
+a:visited,
+a .yshortcuts,
+a span {
+  color: #0040ff;
+  font-weight: normal;
+  text-decoration: underline;
+}
+.yshortcuts {
+  color: #0040ff;
+}
+
+/* Force Hotmail to display emails at full width */
+.ReadMsgBody {
+  width:100%;
+}
+
+/* Force Hotmail to display emails at full width */
+.ExternalClass{
+  width:100%;
+}
+
+/* Force Hotmail to display normal line spacing */
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%;
+}
+
+/* Force Breaks on long urls */
+a {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}

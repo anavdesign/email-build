@@ -1,0 +1,20 @@
+@media (max-width: 480px) {
+  .layout-container {
+      width: 100%!important;
+  }
+  .layout-responsive,
+  .layout-responsive > tbody,
+  .layout-responsive > thead,
+  .layout-responsive > tfoot,
+  .layout-responsive > tbody > tr,
+  .layout-responsive > thead > tr,
+  .layout-responsive > tfoot > tr,
+  .layout-responsive > tbody > tr > td,
+  .layout-responsive > thead > tr > td,
+  .layout-responsive > tfoot > tr > td,
+  .layout-responsive > tr,
+  .layout-responsive > tr > td {
+    display: block!important;
+    width: auto!important;
+  }
+}

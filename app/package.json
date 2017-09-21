@@ -1,0 +1,24 @@
+{
+  "name": "html-email",
+  "version": "1.0.0",
+  "description": "HTML Email",
+  "author": "Adrian Navarrete <andesign@mac.com>",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "devDependencies": {
+    "browser-sync": "^2.18.7",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-email-builder": "^3.0.0",
+    "gulp-file-include": "^1.1.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sass-glob": "0.0.2"
+  }
+}

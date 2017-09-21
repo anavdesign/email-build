@@ -1,0 +1,80 @@
+// ===========================================
+// $ COLOR PALETTE
+// ===========================================
+// Generate Map Using Loop
+// http://bit.ly/2ulhsW0
+//
+// Friendly Color Names
+// http://bit.ly/2m27OlA
+//
+
+@function create_colour_map($color, $percent1, $percent2, $percent3) {
+  $map: (
+    base: $color,
+    lightest : lighten($color, $percent3),
+    lighter  : lighten($color, $percent2),
+    light    : lighten($color, $percent1),
+    dark     : darken($color, $percent1),
+    darker   : darken($color, $percent2),
+    darkest  : darken($color, $percent3),
+  );
+  @return $map;
+}
+
+// $ BRANDS
+// -------------------------------------------
+$color-brand: (
+  google    : #d34836,
+  linkedin  : #0077b5,
+  sharethis : #94d228,
+  facebook  : #3b5998,
+  twitter   : #00aced,
+  pinterest : #cb2027,
+  youtube   : #bb0000,
+  amazon    : #feae15,
+  flickr    : #0063dc,
+  scribd    : #00b7ef
+);
+
+$palette-brand: ();
+
+@each $key, $value in $color-brand {
+  $map: ();
+  $map: map-merge($map, ($key: create_colour_map($value, 10%, 20%, 30%)) );
+  $palette-brand: map-merge($palette-brand, $map);
+}
+
+// @debug $palette-brand;
+
+// $ BRANDS
+// -------------------------------------------
+$color-base: (
+  black     : #000000,
+  white     : #FFFFFF,
+  gray      : #5f6473,
+  red       : #990000
+);
+
+$palette-base: ();
+
+@each $key, $value in $color-base {
+  $map: ();
+  $map: map-merge($map, ($key: create_colour_map($value, 10%, 20%, 30%)) );
+  $palette-base: map-merge($palette-base, $map);
+}
+
+// @debug $palette-base;
+
+// $ MERGE COLOR MAPS
+// -------------------------------------------
+$color-map: map-merge($color-base, $color-brand);
+$palette-map: map-merge($palette-base, $palette-brand);
+
+// $ FRIENDLY COLOR NAMES
+// -------------------------------------------
+// http://bit.ly/2m27OlA
+@function palette($palette, $tone: 'base') {
+    @return map-get(
+        map-get($palette-map, $palette), $tone
+    );
+}

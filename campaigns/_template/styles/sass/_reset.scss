@@ -1,0 +1,64 @@
+// ===========================================
+// $ RESET STYLES
+// ===========================================
+
+/* What it does: Remove spaces around the email design added by some email clients. */
+/* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+html,
+.email-body {
+  margin: 0 auto !important;
+  padding: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.email-body,
+.email-wrapper {
+  min-height: 1000px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.email-body {
+  mso-line-height-rule: exactly;
+}
+
+.email-wrapper {
+  text-align: left;
+}
+
+/* What it does: Stops email clients resizing small text. */
+* {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table,
+td {
+  mso-table-lspace: 0pt !important;
+  mso-table-rspace: 0pt !important;
+}
+
+/* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+table {
+  border-spacing: 0 !important;
+  border-collapse: collapse !important;
+  table-layout: fixed !important;
+  margin: 0 auto !important;
+}
+table table table {
+  table-layout: auto;
+}
+
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+  -ms-interpolation-mode:bicubic;
+}
+
+h1, h2, h3, h4, h5, h6, p, hr {
+  margin: 0;
+}
+
+hr {
+  border: 0;
+}

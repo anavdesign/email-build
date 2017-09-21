@@ -1,0 +1,25 @@
+.button-td,
+.button a {
+  transition: all 100ms ease-in;
+}
+
+.button-td:hover,
+.button a:hover {
+  background: #484c57 !important;
+  border-color: #484c57 !important;
+  border-radius: 3px;
+}
+
+/* Red */
+.button--red .button-td:hover,
+.button--red a:hover {
+  background: #660000 !important;
+  border-color: #660000 !important;
+}
+
+/* Black */
+.button--black .button-td:hover,
+.button--black a:hover {
+  background: #333333 !important;
+  border-color: #333333 !important;
+}

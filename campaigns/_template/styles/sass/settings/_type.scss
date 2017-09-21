@@ -1,0 +1,49 @@
+// ===========================================
+// $ TYPE
+// ===========================================
+
+// $ FONT FAMILY
+// -------------------------------------------
+$font-family               : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-narrow        : 'Helvetica Neue Condensed', 'HelveticaNeue Condensed', 'Helvetica Narrow', 'Arial Narrow', Helvetica, Arial, sans-serif;
+$font-family-serif         : 'Rockwell Extra Bold', 'Rockwell Bold', serif;
+$font-family-system        : arial, verdana, helvetica, sans-serif;
+$font-family-body          : $font-family;
+$font-family-heading       : $font-family-narrow;
+
+// $ FONT SIZE
+// -------------------------------------------
+$font-size-root            : 62.5%;
+$font-size-largest         : 2.4rem;
+$font-size-larger          : 2.2rem;
+$font-size-large           : 2rem;
+$font-size-base            : 1.8rem;
+$font-size-small           : 1.6rem;
+$font-size-smaller         : 1.4rem;
+$font-size-smallest        : 1.2rem;
+
+// $ HEADER SIZE
+// -------------------------------------------
+$font-header-size-largest  : 4.5rem;
+$font-header-size-larger   : 3.8rem;
+$font-header-size-large    : 3.4rem;
+$font-header-size-small    : 3rem;
+$font-header-size-smaller  : 2.6rem;
+$font-header-size-smallest : 2.2rem;
+
+// $ LINE HEIGHT
+// -------------------------------------------
+$line-height-largest       : 2.5;
+$line-height-larger        : 2;
+$line-height-large         : 1.75;
+$line-height-base          : 1.5;
+$line-height-small         : 1.25;
+$line-height-smaller       : 1;
+$line-height-smallest      : 0.75;
+
+// $ FONT WEIGHT
+// -------------------------------------------
+$font-weight-thin          : 300;
+$font-weight-normal        : 400;
+$font-weight-bold          : 700;
+$font-weight-heavy         : 800;

@@ -1,0 +1,16 @@
+// ===========================================
+// $ BACKGROUNDS COLORS
+// ===========================================
+
+.background-wrapper {
+  background-color: palette(white);
+}
+.background-white {
+  background-color: palette(white);
+  a {
+    color: palette(red);
+  }
+}
+.background-black {
+  background-color: palette(black);
+}
